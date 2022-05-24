@@ -330,6 +330,15 @@
                 <artifactId>logstash-logback-encoder</artifactId>
                 <version>${logstash-logback-encoder.v}</version>
             </dependency>
+
+            <!-- The org.codehaus.janino:commons-compiler:3.0.6 dependency -->
+            <!-- will be automatically pulled in by Maven's transitivity rules -->
+            <!-- 在加入logstash后，logback 启动报错，缺失该依赖，将依赖增加进来。 -->
+            <dependency>
+                <groupId>org.codehaus.janino</groupId>
+                <artifactId>janino</artifactId>
+                <version>${janino.version}</version>
+            </dependency>
         </dependencies>
     </dependencyManagement>
 
