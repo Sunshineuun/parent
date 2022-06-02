@@ -65,6 +65,14 @@
 
     <dependencyManagement>
         <dependencies>
+            <!-- SpringBoot 依赖 -->
+            <dependency>
+                <groupId>org.springframework.boot</groupId>
+                <artifactId>spring-boot-dependencies</artifactId>
+                <version>${parent.version}</version>
+                <type>pom</type>
+                <scope>import</scope>
+            </dependency>
             <!-- 导入Spring Cloud的依赖管理 -->
             <dependency>
                 <groupId>org.springframework.cloud</groupId>
