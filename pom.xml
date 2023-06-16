@@ -3,10 +3,10 @@
          xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 https://maven.apache.org/xsd/maven-4.0.0.xsd">
     <modelVersion>4.0.0</modelVersion>
 
-    <groupId>com.qiusm</groupId>
-    <artifactId>parent</artifactId>
-    <version>0.0.1</version>
-    <name>parent</name>
+    <groupId>icu.uun</groupId>
+    <artifactId>uun-parent</artifactId>
+    <version>0.0.2</version>
+    <name>uun-parent</name>
     <description>邱胜明公共依赖管理</description>
     <packaging>pom</packaging>
 
@@ -113,13 +113,13 @@
             </dependency>
 
             <dependency>
-                <groupId>com.qiusm</groupId>
+                <groupId>icu.uun</groupId>
                 <artifactId>webconfig-starter</artifactId>
                 <version>${project.parent.version}</version>
             </dependency>
 
             <dependency>
-                <groupId>com.qiusm</groupId>
+                <groupId>icu.uun</groupId>
                 <artifactId>base-dto</artifactId>
                 <version>${project.parent.version}</version>
             </dependency>
