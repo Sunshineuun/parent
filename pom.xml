@@ -7,14 +7,14 @@
     <artifactId>uun-parent</artifactId>
     <version>0.0.2</version>
     <name>uun-parent</name>
-    <description>邱胜明公共依赖管理</description>
+    <description>公共依赖管理</description>
     <packaging>pom</packaging>
 
     <parent>
         <groupId>org.springframework.boot</groupId>
         <artifactId>spring-boot-starter-parent</artifactId>
         <version>2.6.7</version>
-        <relativePath/> <!-- lookup parent from repository -->
+        <relativePath/>
     </parent>
 
     <modules>
@@ -468,13 +468,23 @@
 
     <distributionManagement>
         <repository>
-            <id>alimaven</id>
-            <name>aliyun maven</name>
-            <url>http://maven.aliyun.com/nexus/content/groups/public/</url>
+            <id>dahachuxing</id>
+            <name>dahachuxing repository</name>
+            <url>http://192.168.110.24:8081/repository/maven-releases/</url>
         </repository>
+<!--        <repository>-->
+<!--            <id>dahachuxing</id>-->
+<!--            <name>dahachuxing repository</name>-->
+<!--            <url>http://192.168.110.24:8081/repository/maven-snapshots/</url>-->
+<!--        </repository>-->
     </distributionManagement>
 
     <repositories>
+        <repository>
+            <id>dahachuxing</id>
+            <name>dahachuxing repository</name>
+            <url>http://192.168.110.24:8081/repository/dahachuxing/</url>
+        </repository>
         <repository>
             <id>alimaven</id>
             <name>aliyun maven</name>
