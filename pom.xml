@@ -32,6 +32,8 @@
     </modules>
 
     <properties>
+        <icu.uun.webstarter.version>0.0.2</icu.uun.webstarter.version>
+        <icu.uun.dto.version>0.0.2</icu.uun.dto.version>
         <alibaba.cloud.version>2021.0.1.0</alibaba.cloud.version>
         <common-lang3.v>3.12.0</common-lang3.v>
         <common-pool2.v>2.11.1</common-pool2.v>
@@ -115,13 +117,13 @@
             <dependency>
                 <groupId>icu.uun</groupId>
                 <artifactId>webconfig-starter</artifactId>
-                <version>${project.parent.version}</version>
+                <version>${icu.uun.webstarter.version}</version>
             </dependency>
 
             <dependency>
                 <groupId>icu.uun</groupId>
                 <artifactId>base-dto</artifactId>
-                <version>${project.parent.version}</version>
+                <version>${icu.uun.dto.version}</version>
             </dependency>
 
             <dependency>
