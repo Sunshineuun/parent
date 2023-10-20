@@ -165,7 +165,7 @@
                 <version>${druid.v}</version>
             </dependency>
 
-            <!-- mybatis plus start -->
+            <!-- region mybatis plus start -->
             <dependency>
                 <groupId>com.baomidou</groupId>
                 <artifactId>mybatis-plus-boot-starter</artifactId>
@@ -186,6 +186,12 @@
                 <artifactId>freemarker</artifactId>
                 <version>${freemarker.version}</version>
             </dependency>
+            <dependency>
+                <groupId>com.baomidou</groupId>
+                <artifactId>mybatis-plus-annotation</artifactId>
+                <version>3.5.1</version>
+            </dependency>
+            <!-- endregion -->
 
             <!-- redis -->
             <dependency>
@@ -399,17 +405,18 @@
                 <version>${javax.activation.v}</version>
             </dependency>
 
-            <!-- spring admin server -->
+            <!-- region spring admin server / client -->
             <dependency>
                 <groupId>de.codecentric</groupId>
                 <artifactId>spring-boot-admin-starter-server</artifactId>
             </dependency>
-            <!-- spring admin client -->
             <dependency>
                 <groupId>de.codecentric</groupId>
                 <artifactId>spring-boot-admin-starter-client</artifactId>
             </dependency>
+            <!-- endregion  -->
 
+            <!-- region swagger -->
             <dependency>
                 <groupId>io.springfox</groupId>
                 <artifactId>springfox-boot-starter</artifactId>
@@ -421,6 +428,7 @@
                 <artifactId>swagger-annotations</artifactId>
                 <version>1.6.11</version>
             </dependency>
+            <!-- endregion -->
 
         </dependencies>
     </dependencyManagement>
