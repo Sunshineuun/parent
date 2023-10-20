@@ -205,6 +205,11 @@
                 <artifactId>redis-lock-spring-boot-starter</artifactId>
                 <version>${redis-lock.v}</version>
             </dependency>
+            <dependency>
+                <groupId>org.redisson</groupId>
+                <artifactId>redisson-spring-boot-starter</artifactId>
+                <version>3.16.6</version>
+            </dependency>
 
             <!-- mongodb -->
             <dependency>
