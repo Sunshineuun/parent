@@ -191,9 +191,15 @@
                 <artifactId>mybatis-plus-annotation</artifactId>
                 <version>3.5.1</version>
             </dependency>
+            <!-- 动态数据源 -->
+            <dependency>
+                <groupId>com.baomidou</groupId>
+                <artifactId>dynamic-datasource-spring-boot-starter</artifactId>
+                <version>3.5.1</version>
+            </dependency>
             <!-- endregion -->
 
-            <!-- redis -->
+            <!-- region redis -->
             <dependency>
                 <groupId>org.springframework.boot</groupId>
                 <artifactId>spring-boot-starter-data-redis</artifactId>
@@ -210,8 +216,9 @@
                 <artifactId>redisson-spring-boot-starter</artifactId>
                 <version>3.16.6</version>
             </dependency>
+            <!-- endregion -->
 
-            <!-- mongodb -->
+            <!-- region mongodb -->
             <dependency>
                 <groupId>org.springframework.boot</groupId>
                 <artifactId>spring-boot-starter-data-mongodb</artifactId>
@@ -222,8 +229,8 @@
                 <artifactId>spring-boot-starter-data-mongodb-reactive</artifactId>
                 <version>${spring.boot.version}</version>
             </dependency>
-
-            <!-- kafka -->
+            <!-- endregion -->
+            <!-- region kafka -->
             <dependency>
                 <groupId>org.apache.kafka</groupId>
                 <artifactId>kafka-streams</artifactId>
@@ -240,7 +247,7 @@
                 <version>${spring-kafka.version}</version>
                 <scope>test</scope>
             </dependency>
-
+            <!-- endregion -->
             <!-- jsonrpc4j start -->
             <dependency>
                 <groupId>com.github.briandilley.jsonrpc4j</groupId>
@@ -298,7 +305,8 @@
                 <artifactId>mapstruct-processor</artifactId>
                 <version>${mapstruct.v}</version>
             </dependency>
-            <!-- selenium 自动化 浏览器模拟 -->
+
+            <!-- region selenium 自动化 浏览器模拟 -->
             <dependency>
                 <groupId>org.seleniumhq.selenium</groupId>
                 <artifactId>selenium-java</artifactId>
@@ -359,6 +367,7 @@
                 <artifactId>selenium-support</artifactId>
                 <version>${selenium.v}</version>
             </dependency>
+            <!-- endregion -->
 
             <!--  logback 推送日志文件到logstash -->
             <dependency>
@@ -435,9 +444,35 @@
             </dependency>
             <!-- endregion -->
 
+            <!-- region hbase-->
+            <!-- hbaseClient依赖 -->
+            <dependency>
+                <groupId>org.apache.hbase</groupId>
+                <artifactId>hbase-client</artifactId>
+                <version>2.4.8</version>
+                <exclusions>
+                    <exclusion>
+                        <groupId>org.slf4j</groupId>
+                        <artifactId>slf4j-log4j12</artifactId>
+                    </exclusion>
+                </exclusions>
+            </dependency>
+            <!-- phoenix依赖 -->
+            <dependency>
+                <groupId>org.apache.phoenix</groupId>
+                <artifactId>phoenix-core</artifactId>
+                <version>5.1.2</version>
+                <exclusions>
+                    <exclusion>
+                        <groupId>org.slf4j</groupId>
+                        <artifactId>slf4j-log4j12</artifactId>
+                    </exclusion>
+                </exclusions>
+            </dependency>
+            <!-- endregion -->
+
         </dependencies>
     </dependencyManagement>
-
 
     <build>
         <finalName>${project.artifactId}-${project.version}</finalName>
@@ -500,14 +535,20 @@
             <name>dahachuxing repository</name>
             <url>http://192.168.110.24:8081/repository/maven-releases/</url>
         </repository>
-<!--        <repository>-->
-<!--            <id>dahachuxing</id>-->
-<!--            <name>dahachuxing repository</name>-->
-<!--            <url>http://192.168.110.24:8081/repository/maven-snapshots/</url>-->
-<!--        </repository>-->
+        <!--        <repository>-->
+        <!--            <id>uun</id>-->
+        <!--            <name>uun repository</name>-->
+        <!--            <url>https://www.smuun.online/nexus/repository/maven-releases/</url>-->
+        <!--        </repository>-->
     </distributionManagement>
 
     <repositories>
+        <!--        <repository>-->
+        <!--            <id>uun</id>-->
+        <!--            <name>uun repository</name>-->
+        <!--            <url>https://www.smuun.online/nexus/repository/maven-releases/</url>-->
+        <!--        </repository>-->
+
         <repository>
             <id>dahachuxing</id>
             <name>dahachuxing repository</name>
