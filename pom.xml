@@ -533,38 +533,9 @@
         <repository>
             <id>dahachuxing</id>
             <name>dahachuxing repository</name>
-            <url>http://192.168.110.24:8081/repository/maven-releases/</url>
+            <url>http://192.168.110.38:8081/repository/maven-releases/</url>
         </repository>
-        <!--        <repository>-->
-        <!--            <id>uun</id>-->
-        <!--            <name>uun repository</name>-->
-        <!--            <url>https://www.smuun.online/nexus/repository/maven-releases/</url>-->
-        <!--        </repository>-->
     </distributionManagement>
-
-    <repositories>
-        <!--        <repository>-->
-        <!--            <id>uun</id>-->
-        <!--            <name>uun repository</name>-->
-        <!--            <url>https://www.smuun.online/nexus/repository/maven-releases/</url>-->
-        <!--        </repository>-->
-
-        <repository>
-            <id>dahachuxing</id>
-            <name>dahachuxing repository</name>
-            <url>http://192.168.110.24:8081/repository/dahachuxing/</url>
-        </repository>
-        <repository>
-            <id>alimaven</id>
-            <name>aliyun maven</name>
-            <url>http://maven.aliyun.com/nexus/content/groups/public/</url>
-        </repository>
-        <repository>
-            <id>simmed</id>
-            <name>simmed repository</name>
-            <url>https://packages.simmed.cn/repository/maven/</url>
-        </repository>
-    </repositories>
 
     <pluginRepositories>
         <pluginRepository>
@@ -576,5 +547,4 @@
             <url>https://repo.spring.io/milestone</url>
         </pluginRepository>
     </pluginRepositories>
-
 </project>
