@@ -533,7 +533,7 @@
         <repository>
             <id>dahachuxing</id>
             <name>dahachuxing repository</name>
-            <url>http://192.168.110.38:8081/repository/maven-releases/</url>
+            <url>http://115.159.216.127:8081/repository/maven-releases/</url>
         </repository>
     </distributionManagement>
 
